@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const apiConfig = {
-  baseURL: 'https://dummy.restapiexample.com/api/v1/employees',
+  baseURL: 'http://localhost:3001/api/v1/',
   headers: {
     'Content-Type': 'application/json',
     'X-Requested-With': 'XMLHttpRequest'

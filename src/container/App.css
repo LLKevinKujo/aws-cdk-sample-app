@@ -36,3 +36,139 @@
     transform: rotate(360deg);
   }
 }
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.tabcontent.show {
+  display: block;
+}
+
+.input-container {
+  position: relative;
+  margin: 20px 0;
+}
+
+.input-container input {
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input-container .input-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  color: #999;
+  pointer-events: none;
+  transition: 0.2s all ease;
+}
+
+.input-container input:focus ~ .input-label, .input-container input:not(:placeholder-shown) ~ .input-label {
+  top: -20px;
+  left: 0;
+  font-size: 14px;
+  color: #6c63ff;
+}
+
+.input-container .input-focus {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background: #6c63ff;
+  transition: 0.2s all ease;
+}
+
+.input-container input:focus ~ .input-focus {
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.my-list li {
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.card {
+  background-color: #61dafb;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 20px;
+  width: 300px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.card-header {
+  margin-bottom: 20px;
+}
+
+.card-header h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-body {
+  margin-bottom: 20px;
+}
+
+.card-body p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.card-footer a {
+  color: #007bff;
+  text-decoration: none;
+}

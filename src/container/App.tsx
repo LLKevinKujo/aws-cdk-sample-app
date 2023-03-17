@@ -1,6 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './Home';
-import Detail from './Detail';
 
 
 export default function App() {
@@ -10,7 +9,6 @@ export default function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/"       element={<Home />} />
-          <Route path="/detail" element={<Detail />} />
         </Routes>
       </BrowserRouter>
     </div>
